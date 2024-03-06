@@ -1,0 +1,187 @@
+/* style.css */
+.brand-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.brand-table th,
+.brand-table td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 1439px) {
+  .brand-table th,
+  .brand-table td {
+    max-width: 150px;
+  }
+}
+@media only screen and (max-width: 875px) {
+  .brand-table td {
+    max-width: 6.25rem;
+  }
+}
+@media only screen and (max-width: 675px) {
+  .brand-table td {
+    max-width: 3.25rem;
+  }
+}
+@media only screen and (max-width: 275px) {
+  .brand-table td {
+    max-width: 2rem;
+  }
+}
+
+.brand-table th {
+  font-weight: 500;
+  text-align: left;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.brands {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  gap: 0.5rem;
+}
+
+.tag {
+  border: 1px solid lightgray;
+  color: lightgray;
+  font-size: 1rem;
+  width: max-content;
+  white-space: nowrap;
+  padding: 0.25rem;
+  overflow: hidden; /* Handle overflow */
+  text-overflow: ellipsis; /* Handle overflow */
+}
+
+.team-members {
+  display: flex;
+}
+
+.member-photo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.team-member:not(:first-child) {
+  margin-left: -15px;
+  z-index: 1;
+}
+
+.brand-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.brand-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.25em;
+}
+
+.messages {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25em;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.brand-name {
+  font-weight: bold;
+}
+
+.categories {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.category {
+  display: flex;
+  padding: 4px 8px;
+  white-space: nowrap;
+  margin-right: 4px;
+  overflow: hidden; /* Handle overflow */
+  text-overflow: ellipsis; /* Handle overflow */
+}
+
+.category:nth-child(1) {
+  background-color: #a0e2b4; /* Yellow */
+  color: green;
+}
+
+.category:nth-child(2) {
+  background-color: #e3e6b7;
+  color: #cd6e6e;
+}
+
+.category:nth-child(3) {
+  background-color: #2196f3; /* Blue */
+}
+
+.next-meeting {
+  color: #ff0000;
+}
+
+.meeting {
+  border: 1px solid lightgray;
+  padding: 0.25rem;
+  text-align: center;
+  white-space: nowrap;
+  width: max-content;
+  border-radius: 0.25rem;
+  overflow: hidden; /* Handle overflow */
+  text-overflow: ellipsis; /* Handle overflow */
+}
+
+.next-meeting.upcoming {
+  color: #008000; /* Green */
+}
+
+.add-icon {
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 1rem;
+  height: 1rem;
+}
+.checkbox::-ms-check {
+  background-color: black;
+}

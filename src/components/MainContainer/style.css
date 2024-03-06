@@ -1,0 +1,10 @@
+.mainContainer {
+  background-color: #fff;
+  height: 96vh;
+  width: calc(98vw - 5px);
+  display: flex;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  gap: 5px;
+  padding: 0.25rem;
+}
